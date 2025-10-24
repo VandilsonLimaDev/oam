@@ -14,7 +14,7 @@ export default function Home() {
             povo: o povo alagoano.
           </h5>
         </div>
-        <div className="banner_img">teste</div>
+        <div className="banner_img"></div>
       </Banner>
     </main>
   );

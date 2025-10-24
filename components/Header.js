@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header__container">
-        <Link href="/">
+        <Link className="header__logo" href="/">
           <Image
             src="/oam.svg"
             width={300}
@@ -23,6 +23,7 @@ const Header = () => {
           <Link href="/social">Social</Link>
         </nav>
       </div>
+      <div className="header__bar"></div>
     </header>
   );
 };
