@@ -1,18 +1,21 @@
-'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { BriefcaseBusiness, Sparkles, SquareStar, TrophyIcon } from 'lucide-react'
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Image from "next/image";
+import {
+  BriefcaseBusiness,
+  Sparkles,
+  SquareStar,
+  TrophyIcon,
+} from "lucide-react";
 
-
-import 'swiper/css';
-import 'swiper/css/parallax';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
+import "swiper/css";
+import "swiper/css/parallax";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Banner = () => {
-  
   return (
     <section className="banner">
       <div className="container banner__container">
@@ -27,54 +30,81 @@ const Banner = () => {
           </h5>
           <div className="banner__buttons">
             <button className="btn btn__icons">
-              <span className="btn__icons--icon"><Sparkles /></span> <span className="btn__icons--text">Fale com nosso time de negócios</span></button>
-            <button className="btn btn__icons"><span className="btn__icons--icon"><TrophyIcon /></span> <span className="btn__icons--text">Nossa História e Valores</span></button>
+              <span className="btn__icons--icon">
+                <Sparkles />
+              </span>{" "}
+              <span className="btn__icons--text">
+                Fale com nosso time de negócios
+              </span>
+            </button>
+            <button className="btn btn__icons">
+              <span className="btn__icons--icon">
+                <TrophyIcon />
+              </span>{" "}
+              <span className="btn__icons--text">Nossa História e Valores</span>
+            </button>
           </div>
         </div>
         <div className="banner_img">
+          {/* <Image
+            src="/apresentadores1.png"
+            alt="Apresentadores"
+            width={500}
+            height={500}
+          /> */}
           <Swiper
-            slidesPerView={3}
+            slidesPerView={2}
             centeredSlides={true}
             spaceBetween={30}
             parallax={true}
             navigation={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
             pagination={{
               clickable: true,
             }}
             modules={[Autoplay, Pagination, Navigation]}
-            className="oamSwiper"
+            className="heroSwiper"
             breakpoints={{
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        // when window width is >= 768px
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        // when window width is >= 1024px
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-      }}
-
+              // when window width is >= 640px
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              // when window width is >= 768px
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              // when window width is >= 1024px
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+            }}
           >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/banner_hero_1.png"
+                alt="Bom dia AL"
+                width={336}
+                height={400}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/banner_hero_2.png"
+                alt="Bom dia AL"
+                width={336}
+                height={400}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/banner_hero_3.png"
+                alt="Bom dia AL"
+                width={336}
+                height={400}
+              />
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
