@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import InfiniteScroll from "./InfiniteScroll";
+import InfiniteScroll from "./animations/InfiniteScroll";
 
 const NossasMarcasScroll = () => {
   const empresas = [
@@ -19,22 +19,27 @@ const NossasMarcasScroll = () => {
         <h2>
           Nossas <span>Marcas</span>
         </h2>
-        <div className="nossas-marcas__logos">
-          <InfiniteScroll
-            isTilted={true}
-            tiltDirection="left"
-            autoplay={true}
-            autoplaySpeed={0.1}
-            autoplayDirection="down"
-            pauseOnHover={true}
-          >
-            {empresas.map(({ id, alt, src }) => (
-              <div className="nossas-marcas__link" key={id}>
-                <Image src={`/empresas/${src}`} alt={alt} width={250} alt={0} />
-              </div>
-            ))}
-          </InfiniteScroll>
-        </div>
+      </div>
+      <div className="nossas-marcas__logos">
+        <InfiniteScroll
+          isTilted={true}
+          tiltDirection="left"
+          autoplay={true}
+          autoplaySpeed={0.1}
+          autoplayDirection="down"
+          pauseOnHover={true}
+        >
+          {empresas.map(({ id, alt, src }) => (
+            <div className="nossas-marcas__link" key={id}>
+              <Image
+                src={`/empresas/${src}`}
+                alt={alt}
+                width={250}
+                height={250}
+              />
+            </div>
+          ))}
+        </InfiniteScroll>
       </div>
     </section>
   );

@@ -3,4 +3,5 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "explorer.compactFolders": false,
   "workbench.editor.labelFormat": "short"
+  "window.zoomLevel": 0.7
 }
