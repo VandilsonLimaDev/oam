@@ -41,6 +41,10 @@ const NossasMarcasCarrossel = () => {
             className="nossasmarcascarrossel"
             breakpoints={{
               // when window width is >= 640px
+              0: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
               640: {
                 slidesPerView: 1,
                 spaceBetween: 20,
@@ -53,7 +57,7 @@ const NossasMarcasCarrossel = () => {
               // when window width is >= 1024px
               1024: {
                 slidesPerView: 7,
-                spaceBetween: 90,
+                spaceBetween: 50,
               },
             }}
           >

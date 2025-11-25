@@ -14,7 +14,7 @@ const NossosNumerosMapa = () => {
             </h2>
           </div>
           <div className="nossos-numeros__mapa grid">
-            <div className="col-span-8 min-h-80">
+            <div className="col-span-12 md:col-span-8 min-h-80">
               <Image
                 src="/mapa.jpg"
                 width={1920}
@@ -22,7 +22,7 @@ const NossosNumerosMapa = () => {
                 alt="nossos números"
               />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-12 md:col-span-4 gap-8 grid">
               <div className="nossos-numeros__box">
                 <MapPinIcon />
                 <div className="nossos-numeros__text">

@@ -14,6 +14,7 @@ import "swiper/css/parallax";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { delay } from "motion";
 
 const Banner = () => {
   return (
@@ -53,7 +54,11 @@ const Banner = () => {
             height={500}
           /> */}
           <Swiper
-            slidesPerView={2}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            slidesPerView={1}
             centeredSlides={true}
             spaceBetween={30}
             parallax={true}

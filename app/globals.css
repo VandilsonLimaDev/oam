@@ -68,12 +68,12 @@
     @apply col-span-12 md:col-span-8 lg:col-span-6 xl:col-span-6;
   }
   .banner__text--title {
-    @apply text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl
-      lg:leading-10 xl:leading-13 2xl:leading-16
-      font-extrabold tracking-tight text-slate-500 pr-12;
+    @apply text-6xl md:text-6xl lg:text-5xl xl:text-7xl 2xl:text-7xl
+      lg:leading-10 xl:leading-14 2xl:leading-16
+      font-extrabold tracking-tight text-slate-500 md:pr-12;
   }
   .banner__text--subtitle {
-    @apply text-xl pr-20 mt-12 mb-8 pl-6 border-l border-dotted border-l-indigo-800;
+    @apply text-xl pr-20 mt-4 mb-16 pl-6 border-l border-dotted border-l-indigo-800;
   }
   .banner_img {
     @apply col-span-12 md:col-span-4 lg:col-span-6;
@@ -113,13 +113,13 @@
     @apply grid grid-cols-3 gap-8;
   }
   .nossos-numeros__box {
-    @apply flex gap-4 bg-slate-100 py-4 px-8 rounded-2xl;
+    @apply flex gap-2 md:gap-4 bg-slate-100 py-4 px-2 md:px-8 rounded-2xl;
   }
   .nossos-numeros__box svg {
     @apply w-24 h-24;
   }
   .nossos-numeros__text-main {
-    @apply text-5xl font-black -tracking-wide;
+    @apply text-4xl md:text-5xl font-black -tracking-wide;
   }
   .nossos-numeros__text-sub h4 {
     @apply text-xl font-bold uppercase;
