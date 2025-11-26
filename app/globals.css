@@ -75,9 +75,20 @@
   .banner__text--subtitle {
     @apply text-xl pr-20 mt-4 mb-16 pl-6 border-l border-dotted border-l-indigo-800;
   }
-  .banner_img {
-    @apply col-span-12 md:col-span-4 lg:col-span-6;
+  .banner__img {
+    @apply col-span-12 md:col-span-4 lg:col-span-6 relative;
   }
+  .banner__img--esquerda,
+  .banner__img--direita {
+    @apply absolute top-0 z-20;
+  }
+  .banner__img--esquerda {
+    @apply left-0;
+  }
+  .banner__img--direita {
+    @apply right-0;
+  }
+
   .banner__buttons {
     @apply flex flex-col xl:flex-row gap-4;
   }

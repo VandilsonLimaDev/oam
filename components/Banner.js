@@ -46,7 +46,21 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="banner_img">
+        <div className="banner__img">
+          <Image
+            className="banner__img--esquerda"
+            src="/swiperjs-esquerda.png"
+            width="113"
+            height="440"
+            alt=""
+          />
+          <Image
+            className="banner__img--direita"
+            src="/swiperjs-direita.png"
+            width="113"
+            height="440"
+            alt=""
+          />
           {/* <Image
             src="/apresentadores1.png"
             alt="Apresentadores"
